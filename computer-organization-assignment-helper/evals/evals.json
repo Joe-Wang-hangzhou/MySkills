@@ -1,0 +1,20 @@
+{
+  "skill_name": "computer-organization-assignment-helper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "说明中断向量地址和入口地址的区别和联系",
+      "expected_output": "纯文本，简洁解释中断向量地址（指针的指针）和入口地址（指针）的概念及其联系，50-100字左右，无AI痕迹"
+    },
+    {
+      "id": 2,
+      "prompt": "某游戏要求显示器在1920×1080分辨率下达到144Hz的刷新频率，且支持HDR（颜色深度为32位）。若显卡输出的视频信号无压缩，试计算显卡需向显示器传输的最小数据量（单位：GB），假设游戏连续运行1分钟。",
+      "expected_output": "包含核心算式和最终结果（约66.74 GB），纯文本无Markdown，计算步骤简洁"
+    },
+    {
+      "id": 3,
+      "prompt": "计算8MHz、16位宽的总线带宽。",
+      "expected_output": "带宽计算：8MHz * 2B = 16MB/s，纯文本输出，无Markdown"
+    }
+  ]
+}

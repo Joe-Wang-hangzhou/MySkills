@@ -1,0 +1,23 @@
+{
+  "skill_name": "android-assignment-helper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create an Android Kotlin project for a simple calculator assignment. The app should have two input fields for numbers, buttons for addition, subtraction, multiplication, and division, and a text view to display the result. Use 'wch' as the student initials. Read the requirements from /tmp/calculator_assignment.pptx if it exists.",
+      "expected_output": "A complete Android Kotlin project in a directory starting with 'wch' that implements a calculator with basic arithmetic operations. The code should look like a typical university student wrote it, without comments and using simple patterns.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Build an Android app for a student grade tracker based on the PowerPoint at /tmp/grades_assignment.pptx. The app should show a list of subjects with grade input fields and display the average. Use 'wch' as the student initials prefix.",
+      "expected_output": "A complete Android Kotlin project starting with 'wch' that implements a grade tracker with subject list, grade input, and average calculation. Code should be simple and without comments.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Make an Android todo list app for the assignment described in /tmp/todo_assignment.pptx. It should have a text input, add button, todo list display, and ability to mark items complete. Prefix everything with 'wch'.",
+      "expected_output": "A complete Android Kotlin project with 'wch' prefix that implements a simple todo list with add and complete functionality. Code should be straightforward university student style.",
+      "files": []
+    }
+  ]
+}

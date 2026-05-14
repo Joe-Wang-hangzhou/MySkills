@@ -1,60 +1,21 @@
 ---
-name: android-assignment-helper
-description: Complete Android development course assignments from scratch. Use this skill whenever the user asks to create an Android Kotlin project based on a Markdown assignment description, build a university Android homework project, or implement a mobile app assignment for an Android development class. This skill reads Markdown files to extract assignment requirements (with optional JSON UI layout descriptions), creates complete Android Kotlin projects using the "Empty Views Activity" template, embeds student initials "wch" in project and class names, and writes code in a simple, straightforward style typical of a university student without using advanced patterns or comments.
+name: android-assignment-helper-ppt-old
+description: Complete Android development course assignments from scratch. Use this skill whenever the user asks to create an Android Kotlin project based on a PowerPoint assignment description, build a university Android homework project, or implement a mobile app assignment for an Android development class. This skill reads PowerPoint files to extract assignment requirements, creates complete Android Kotlin projects using the "Empty Views Activity" template, embeds student initials "wch" in project and class names, and writes code in a simple, straightforward style typical of a university student without using advanced patterns or comments.
 ---
 
-# Android Assignment Helper (Markdown Input)
+# Android Assignment Helper
 
-This skill helps complete Android development course assignments. Given a Markdown file with assignment requirements, you will create a complete, working Android Kotlin project.
+This skill helps complete Android development course assignments. Given a PowerPoint file with assignment requirements, you will create a complete, working Android Kotlin project.
 
 ## Workflow
 
-### Step 1: Read Assignment Requirements from Markdown File
+### Step 1: Extract Assignment Requirements from PowerPoint
 
-Read the Markdown (.md) file provided by the user. The file contains:
-
-- **Assignment title and description**: Plain text describing what to build
-- **Required features and functionality**: Detailed feature list and behavior description
-- **Optional JSON UI layout description**: A JSON code block (inside ```json fences) that describes the UI layout structure in a structured format. When present, use this as the authoritative source for the layout design.
-
-The JSON UI layout description, if provided, follows this kind of structure:
-
-```json
-{
-  "screens": [
-    {
-      "type": "Activity",
-      "name": "Main",
-      "layout": {
-        "root": "LinearLayout",
-        "orientation": "vertical",
-        "children": [
-          {
-            "type": "TextView",
-            "id": "titleText",
-            "text": "Title",
-            "textSize": 20,
-            "gravity": "center"
-          },
-          {
-            "type": "EditText",
-            "id": "inputField",
-            "hint": "Enter text",
-            "inputType": "text"
-          },
-          {
-            "type": "Button",
-            "id": "submitBtn",
-            "text": "Submit"
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-If no JSON layout is provided, design the UI based on the text description alone.
+Use the pptx skill to read the PowerPoint file and extract:
+- Assignment title and description
+- Required features and functionality
+- Any screenshots or renderings showing expected UI
+- Student initials requirement (look for "abc" or similar)
 
 ### Step 2: Create Android Project Structure
 
@@ -63,10 +24,10 @@ Create a new Android Kotlin project using the **"Empty Views Activity"** templat
 Create the project in an appropriate directory with the following structure:
 
 ```
-wch<AssignmentName>/
+abc<AssignmentName>/
 ├── app/
 │   ├── src/main/
-│   │   ├── java/com/wch/<assignmentname>/
+│   │   ├── java/com/abc/<assignmentname>/
 │   │   │   ├── MainActivity.kt
 │   │   │   └── [other activities/classes]
 │   │   ├── res/
@@ -88,7 +49,7 @@ wch<AssignmentName>/
 
 Implement all required features from the assignment:
 - Create necessary Activities, Fragments, Adapters
-- Design layouts in XML (use the JSON UI description as the primary layout reference when provided)
+- Design layouts in XML
 - Implement ViewModels and data handling
 - Add any required resources (strings, colors, drawables)
 
